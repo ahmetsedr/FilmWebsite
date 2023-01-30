@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        .image-hover:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .yeniBolum {
+            width: 50%;
+            border-radius: 20rem;
+            border: 1px solid yellow;
+        }
+
+        .yeniBolum:hover {
+            border-radius: 0.6rem;
+            border: none;
+            transition: 0.4s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container mt-5 mb-5 bg-dark text-light">
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Diziboks</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item mx-4">
+                            <input class="form-control bg-dark" type="search" placeholder=" Arama Yapın..."
+                                aria-label="Search">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-secondary" href="#">Arşiv</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Dizi Takvimi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Yardım</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex list-unstyled" role="search">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kayıt Ol / Giriş Yap
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li>
+                                    <p class="dropdown-item" href="#">
+                                        <buton class="btn btn-warning">Giriş Yap</buton>
+                                    </p>
+                                </li>
+                                <li><a class="dropdown-item text-secondary">+ Kayıt Ol</a></li>
+
+                            </ul>
+                        </li>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-evenly p-2">
+            <a href="#A" class="text-decoration-none text-light">A</a>
+            <a href="#B" class="text-decoration-none text-light">B</a>
+            <a href="#C" class="text-decoration-none text-light">C</a>
+            <a href="#D" class="text-decoration-none text-light">D</a>
+            <a href="#E" class="text-decoration-none text-light">E</a>
+            <a href="#F" class="text-decoration-none text-light">F</a>
+            <a href="#G" class="text-decoration-none text-light">G</a>
+            <a href="#H" class="text-decoration-none text-light">H</a>
+            <a href="#J" class="text-decoration-none text-light">J</a>
+            <a href="#K" class="text-decoration-none text-light">K</a>
+            <a href="#L" class="text-decoration-none text-light">L</a>
+            <a href="#M" class="text-decoration-none text-light">M</a>
+            <a href="#N" class="text-decoration-none text-light">N</a>
+            <a href="#O" class="text-decoration-none text-light">O</a>
+            <a href="#P" class="text-decoration-none text-light">P</a>
+            <a href="#Q" class="text-decoration-none text-light">Q</a>
+            <a href="#R" class="text-decoration-none text-light">R</a>
+            <a href="#S" class="text-decoration-none text-light">S</a>
+            <a href="#T" class="text-decoration-none text-light">T</a>
+            <a href="#U" class="text-decoration-none text-light">U</a>
+            <a href="#V" class="text-decoration-none text-light">V</a>
+            <a href="#W" class="text-decoration-none text-light">W</a>
+            <a href="#X" class="text-decoration-none text-light">X</a>
+            <a href="#Y" class="text-decoration-none text-light">Y</a>
+            <a href="#Z" class="text-decoration-none text-light">Z</a>
+            <a href="##" class="text-decoration-none text-light">#</a>
+        </div>
+        <div class="d-flex justify-content-around p-2">
+            <a href="#" class="text-decoration-none text-light">Tüm Bölümler</a>
+            <a href="#" class="text-decoration-none text-light">Poüler Bölümler</a>
+            <a href="#" class="text-decoration-none text-light">Efsane Dizlier</a>
+            <a href="#" class="text-decoration-none text-warning">IMDb 7+ Diziler</a>
+            <a href="#" class="text-decoration-none text-light">İns</a>
+            <a href="#" class="text-decoration-none text-light">Fac</a>
+            <a href="#" class="text-decoration-none text-light">Twi</a>
+        </div>
+        <div>
+            <h4 class="mt-4">Beklenen / Eklenen Diziler</h4>
+            <hr>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/secret-invasion-200x290.jpg"
+                            class="d-block col-md-3 mx-auto" alt="..." />
+                        <div class="carousel-caption d-inline d-md-block">
+                            <h5 class="box-shadow justify-content-center">
+                                <div class="bg-dark d-inline p-1 opacity-75">Secret Invasion</div>
+                            </h5>
+                            <p class="box-shadow justify-content-center">
+                            <div class="bg-dark d-inline p-1 opacity-75">1 Sezon</div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/the-mandalorian-200x290.jpg"
+                            class="d-block col-md-3 mx-auto" alt="..." />
+                        <div class="carousel-caption d-inline d-md-block">
+                            <h5 class="box-shadow justify-content-center">
+                                <div class="bg-dark d-inline p-1 opacity-75">The Mandalorian</div>
+                            </h5>
+                            <p class="box-shadow justify-content-center">
+                            <div class="bg-dark d-inline p-1 opacity-75">3 Sezon</div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/gotham-knights-200x290.jpg"
+                            class="d-block col-md-3 mx-auto" alt="..." />
+                        <div class="carousel-caption d-inline d-md-block">
+                            <h5 class="box-shadow justify-content-center">
+                                <div class="bg-dark d-inline p-1 opacity-75">Gotham Knights</div>
+                            </h5>
+                            <p class="box-shadow justify-content-center">
+                            <div class="bg-dark d-inline p-1 opacity-75">1 Sezon</div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h4>Dikkat Çeken Yeni Diziler</h4>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto" style="width: 10rem;">
+                    <a href="#">
+                        <img src="https://www.dizibox.tv/wp-content/uploads/afisler/sahmaran-200x290.jpg"
+                            class="card-img-top image-hover" alt="...">
+                    </a>
+                    <div style="bottom:4.7rem" class="card-body text-center position-relative">
+                        <p class="card-text" style="text-shadow: 2px 2px black;">Şahmaran | 2023</p>
+                        <p class="badge rounded-pill text-bg-warning">iMDb 5.1</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div>
+            <h4> Yeni Eklenen Bölümler</h4>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+                <div class="col-md-2 mx-auto" id="yeniEklenenBolum" style="width:10rem;"><img
+                        src="https://www.w3schools.com/w3images/avatar6.png" alt="..." class="yeniBolum">
+                    <p>Film Başlığı</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>Efsane Diziler</h4>
+                    <hr>
+                    <div class="bg-dark row mx-auto">
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-3">
+                            <p>Bu Bir Film</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Türkçe Dublaj</h4>
+                    <hr>
+                    <div class="bg-dark row mx-auto">
+
+                        <article class="bg-secondary m-1 col-md-8 d-flex align-items-center">
+                            <img src=" https://www.w3schools.com/howto/img_avatar.png" alt="..."
+                                style="width: 3rem;border-radius:10rem;">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-8 d-flex align-items-center">
+                            <img src=" https://www.w3schools.com/howto/img_avatar.png" alt="..."
+                                style="width: 3rem;border-radius:10rem;">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-8 d-flex align-items-center">
+                            <img src=" https://www.w3schools.com/howto/img_avatar.png" alt="..."
+                                style="width: 3rem;border-radius:10rem;">
+                            <p>Bu Bir Film</p>
+                        </article>
+                        <article class="bg-secondary m-1 col-md-8 d-flex align-items-center">
+                            <img src=" https://www.w3schools.com/howto/img_avatar.png" alt="..."
+                                style="width: 3rem;border-radius:10rem;">
+                            <p>Bu Bir Film</p>
+                        </article>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-dark p-5 text-light d-flex justify-content-between mt-4">
+            <h1>Diziboks</h1>
+            <div class="dropup">
+                <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Projeler ve Mail</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://github.com/ahmetsedr" target="_blank">Github</a>
+                    <a class="dropdown-item" href="https://codepen.io/ahmetsedr" target="_blank">Codepen.io</a>
+                    <a class="dropdown-item" href="mailto:ahmetsecodr@gmail.com" target="_blank">Mail</a>
+                </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
